@@ -1,0 +1,80 @@
+/* Resets and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+  }
+  .container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  /* Header */
+  header .vc-photo {
+    background-image: url('your-photo-url.jpg');
+    background-size: cover;
+    height: 300px;
+  }
+  header .vc-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  header .name h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  header nav ul {
+    list-style: none;
+    display: flex;
+  }
+  header nav ul li {
+    padding: 10px;
+  }
+  header nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Main Content */
+  .content-wrap {
+    padding: 20px;
+  }
+  .details, .personal {
+    padding: 15px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+  }
+  
+  /* Media Queries for Responsive Adjustments */
+  @media (min-width: 768px) {
+    .container-fluid {
+      max-width: 720px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container-fluid {
+      max-width: 960px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container-fluid {
+      max-width: 1140px;
+    }
+  }
+  
