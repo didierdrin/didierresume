@@ -1,0 +1,116 @@
+/* styles reprica */ 
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;   
+}
+
+body { 
+    font-family: 'Arial', sans-serif;
+}
+
+.container-fluid {
+    background-color: red; 
+    height: 90px; 
+    width: 100%; 
+    padding-right: 15px; 
+    padding-left: 15px; 
+    margin-right: auto; 
+    margin-left: auto; 
+}
+
+header .vc-photo {
+    background-image: url("assets/myphoto.jpg");
+    background-size: cover; 
+    height: 600px; 
+}
+
+header .vc-name {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    padding: 20px; 
+}
+
+header .name h1 {
+    font-size: 2.5rem; 
+    color: #333; 
+}
+
+header nav ul {
+    list-style: none; 
+    display: flex;    
+}
+
+header nav ul li {  
+    padding: 10px; 
+}
+
+header nav ul li a {
+    text-decoration: none; 
+    color: #333; 
+}
+
+/* Main content */
+.content-wrap {
+    padding: 20px; 
+}
+
+.details, .personal { 
+    padding: 15px; 
+}
+
+footer {
+    text-align: center; 
+    padding: 10px; 
+    background: #333; 
+    color: #fff; 
+    background-color: aliceblue; 
+}
+
+@media (min-width: 768px) {
+    .container-fluid {
+        max-width: 720px; 
+    }
+}
+
+@media (min-width: 992px) {
+    .container-fluid {
+        max-width: 960px; 
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-fluid {
+        max-width: 1140px; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

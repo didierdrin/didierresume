@@ -1,14 +1,18 @@
 /* Resets and Basic Styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+
   body {
+    background-color: aquamarine;
+    
+    width: 100%;
+    height: 100%;
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
   }
   .container-fluid {
+    position: relative;
+    margin-top: 20px;
+  background-color: aquamarine;
+  /* height: 90px; */
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -16,12 +20,23 @@
     margin-left: auto;
   }
   
+
   /* Header */
-  header .vc-photo {
-    background-image: url('your-photo-url.jpg');
-    background-size: cover;
-    height: 300px;
+
+  header {
+    width: 100%; 
   }
+
+  header .vc-photo {
+    position: relative; 
+    background-image: url("assets/myphoto.jpg");
+    background-size: cover;
+    background-position-y: 80pc;
+    height: 600px;
+    width: 100%;
+  }
+
+  
   header .vc-name {
     display: flex;
     flex-direction: column;
@@ -36,9 +51,15 @@
   header nav ul {
     list-style: none;
     display: flex;
+    
+    
   }
   header nav ul li {
-    padding: 10px;
+    padding: 20px;
+  }
+
+  header nav ul li:hover {
+    background-color: antiquewhite;
   }
   header nav ul li a {
     text-decoration: none;
@@ -47,33 +68,43 @@
   
   /* Main Content */
   .content-wrap {
-    padding: 20px;
+
+   margin: 0px; 
+    /* padding-top: 20px; */
   }
   .details, .personal {
+    
     padding: 15px;
   }
   
   /* Footer */
   footer {
     text-align: center;
+    position: absolute;
+    left: 0px;
+    width: 100%;
     padding: 10px;
     background: #333;
-    color: #fff;
+    color: rosybrown;
+    /* background-color: red; */
   }
   
   /* Media Queries for Responsive Adjustments */
   @media (min-width: 768px) {
     .container-fluid {
+      
       max-width: 720px;
     }
   }
   @media (min-width: 992px) {
     .container-fluid {
+    
       max-width: 960px;
     }
   }
   @media (min-width: 1200px) {
     .container-fluid {
+    
       max-width: 1140px;
     }
   }
